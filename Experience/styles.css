@@ -1,0 +1,65 @@
+• {
+    margin: 0;
+}
+body {
+    border: 0px solid whitesmoke;
+    background-color: whitesmoke;
+    overflow-y: auto;  
+    margin-left: 200px;
+}
+
+.layout {
+    display: grid;
+    place-items: center;
+}
+
+
+.header {
+    display: grid;
+    place-items: center;
+    font-family: arial;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 35px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+    color: rgb(133, 132, 132);
+}
+div.footer { 
+    height: 120px;
+    border: 0;
+    display: flex; 
+    flex-direction:column; 
+    justify-content:space-between;
+    margin-top: 20px;
+    background-color: rgb(197, 194, 194);
+
+
+}
+/*SMOOTH SCROLL BAR FOR BETTER USER EXPERIENCE*/
+html {
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    background: turquoise;
+    border-radius: 5px;
+    border: 2px solid rgba(85, 215, 255, 0.884);
+}
+
+@media screen and (min-width: 1300px) {
+	* { 
+        color: rgb(238, 99, 57);
+	}
+}
+

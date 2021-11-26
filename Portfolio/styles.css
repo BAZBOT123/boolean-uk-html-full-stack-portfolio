@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    border: 10px solid rgb(196, 238, 133);
+    overflow-y: auto;  
+}
+
+.layout {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgb(196, 238, 133);
+}
+
+.header {
+    display: grid;
+    place-items: center;
+    font-family: arial;
+    height: 0;
+    text-align: center;
+    box-sizing: border-box
+}
+
+h1 {
+    font-size: 35px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgb(49, 49, 49);
+    box-sizing: border-box
+}
+
+nav li {
+    list-style: none;
+    font-family: arial;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(196, 238, 133);
+    background-color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+
+a:hover {
+    background: turquoise;
+    border-radius: 5px;
+    border: 2px solid rgb(196, 238, 133);
+}
+
+div.main {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 350px 350px 350px;
+}
+
+.boxone,
+.boxtwo,
+.boxthree {
+    font-size: 15px;
+    border: 5px solid rgb(176, 224, 103);
+    background: white;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 230px;
+    color: rgba(36, 120, 168, 0.925);
+    box-sizing: content-box;
+    text-align: center;
+    padding-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+
+@media screen and (min-width: 1300px) {
+    nav li,
+	.boxone,
+    .boxtwo,
+    .boxthree { 
+    background-color: rgb(203, 236, 110);
+	}
+}
+
